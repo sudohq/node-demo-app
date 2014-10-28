@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 warn package.json node-demo-app@0.0.1 No description
+6 warn package.json node-demo-app@0.0.1 No repository field.
+7 warn package.json node-demo-app@0.0.1 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/sudohq/brocode/2/myapp2', [ 'express' ] ]
+10 info preinstall node-demo-app@0.0.1
+11 verbose readDependencies using package.json deps
+12 verbose cache add [ 'express@4.1.2', null ]
+13 verbose cache add name=undefined spec="express@4.1.2" args=["express@4.1.2",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'express@4.1.2',
+14 verbose parsed url   path: 'express@4.1.2',
+14 verbose parsed url   href: 'express@4.1.2' }
+15 verbose cache add name="express" spec="4.1.2" args=["express","4.1.2"]
+16 verbose parsed url { protocol: null,
+16 verbose parsed url   slashes: null,
+16 verbose parsed url   auth: null,
+16 verbose parsed url   host: null,
+16 verbose parsed url   port: null,
+16 verbose parsed url   hostname: null,
+16 verbose parsed url   hash: null,
+16 verbose parsed url   search: null,
+16 verbose parsed url   query: null,
+16 verbose parsed url   pathname: '4.1.2',
+16 verbose parsed url   path: '4.1.2',
+16 verbose parsed url   href: '4.1.2' }
+17 verbose addNamed [ 'express', '4.1.2' ]
+18 verbose addNamed [ '4.1.2', '4.1.2' ]
+19 silly lockFile e48cdf41-express-4-1-2 express@4.1.2
+20 verbose lock express@4.1.2 /home/sudohq/.npm/e48cdf41-express-4-1-2.lock
+21 verbose request where is /express
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id f8ac87cb8747bdab
+24 verbose url raw /express
+25 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+26 verbose url resolved https://registry.npmjs.org/express
+27 verbose request where is https://registry.npmjs.org/express
+28 info trying registry request attempt 1 at 14:53:34
+29 verbose etag "2YSGVU28TIBYH7X8AABGWPG54"
+30 http GET https://registry.npmjs.org/express
+31 http 304 https://registry.npmjs.org/express
+32 silly registry.get cb [ 304,
+32 silly registry.get   { date: 'Tue, 28 Oct 2014 12:53:34 GMT',
+32 silly registry.get     server: 'Apache',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     'last-modified': 'Tue, 28 Oct 2014 12:53:34 GMT',
+32 silly registry.get     'cache-control': 'max-age=60',
+32 silly registry.get     etag: '"2YSGVU28TIBYH7X8AABGWPG54"',
+32 silly registry.get     age: '18',
+32 silly registry.get     'x-served-by': 'cache-fra1236-FRA',
+32 silly registry.get     'x-cache': 'HIT',
+32 silly registry.get     'x-cache-hits': '1',
+32 silly registry.get     'x-timer': 'S1414500814.601094,VS0,VE1',
+32 silly registry.get     vary: 'Accept',
+32 silly registry.get     'content-length': '0',
+32 silly registry.get     'keep-alive': 'timeout=10, max=50',
+32 silly registry.get     connection: 'Keep-Alive' } ]
+33 verbose etag https://registry.npmjs.org/express from cache
+34 silly lockFile 9a80f174-js-org-express-express-4-1-2-tgz https://registry.npmjs.org/express/-/express-4.1.2.tgz
+35 verbose lock https://registry.npmjs.org/express/-/express-4.1.2.tgz /home/sudohq/.npm/9a80f174-js-org-express-express-4-1-2-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/express/-/express-4.1.2.tgz',
+36 verbose addRemoteTarball   'cb1d114255718a65a1bcd6958036ef720c529487' ]
+37 info retry fetch attempt 1 at 14:53:34
+38 verbose fetch to= /tmp/npm-4093-gtceuId9/registry.npmjs.org/express/-/express-4.1.2.tgz
+39 http GET https://registry.npmjs.org/express/-/express-4.1.2.tgz
+40 http 200 https://registry.npmjs.org/express/-/express-4.1.2.tgz
+41 silly lockFile 9a80f174-js-org-express-express-4-1-2-tgz https://registry.npmjs.org/express/-/express-4.1.2.tgz
+42 silly lockFile 9a80f174-js-org-express-express-4-1-2-tgz https://registry.npmjs.org/express/-/express-4.1.2.tgz
+43 silly lockFile e48cdf41-express-4-1-2 express@4.1.2
+44 silly lockFile e48cdf41-express-4-1-2 express@4.1.2
+45 error Error: EACCES, mkdir '/home/sudohq/.npm/express/4.1.2'
+45 error  { [Error: EACCES, mkdir '/home/sudohq/.npm/express/4.1.2']
+45 error   errno: 3,
+45 error   code: 'EACCES',
+45 error   path: '/home/sudohq/.npm/express/4.1.2',
+45 error   parent: 'node-demo-app' }
+46 error Please try running this command again as root/Administrator.
+47 error System Linux 3.13.0-37-generic
+48 error command "/usr/bin/node" "/usr/bin/npm" "install"
+49 error cwd /home/sudohq/brocode/2/myapp2
+50 error node -v v0.10.33
+51 error npm -v 1.4.28
+52 error path /home/sudohq/.npm/express/4.1.2
+53 error code EACCES
+54 error errno 3
+55 error stack Error: EACCES, mkdir '/home/sudohq/.npm/express/4.1.2'
+56 verbose exit [ 3, true ]
